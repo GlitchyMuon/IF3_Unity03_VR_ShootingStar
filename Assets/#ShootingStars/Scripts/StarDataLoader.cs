@@ -31,7 +31,7 @@ public class StarDataLoader {//MonoBehavior removed because class only used to m
             //Set the position
             position = GetBasePosition();
             //Set the color
-            color = SetColor( spectral_type, spectral_index);
+            color = SetColor(spectral_type, spectral_index);
             //Set the size
             size = SetSize(magnitude);
         }
@@ -107,8 +107,7 @@ public class StarDataLoader {//MonoBehavior removed because class only used to m
                 return 1 - Mathf.InverseLerp(-146, 796, magnitude);
             }
 
-    public List<Star> LoadData()
-    {
+    public List<Star> LoadData() {
         List<Star> stars = new();
         //Open the binary file for reading
         const string filename = "BSC5";
